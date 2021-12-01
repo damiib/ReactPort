@@ -1,23 +1,16 @@
-import React, { Component } from 'react';
-import Header from './components/header/header';
-import About from './components/about/about';
-import Resume from './components/resume/resume';
+import React from "react";
+import { ReactDOM } from "react";
+import "styles.css";
+import About from "./components/about/about";
 import Portfolio from './components/portfolio/portfolio';
-import Contact from './Components/contact/contact';
-import Footer from './components/footer/footer';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Header />
-        <About />
-        <Resume />
-        <Portfolio />
-        <Contact />
-        <Footer />
-      </div>
-    );
-  }
+
+
+function App() {
+  return (
+  <div className="App">
+    <About />
+  </div>
+  );
 }
 export default App;
